@@ -8,17 +8,26 @@ public class NewBehaviourScript : MonoBehaviour
     public float springPower;
     public HingeJoint hinge;
     
+    private float targetRelease;
+    private float targetPressed;
+
+    void Start()
+    {
+        targetPressed = hinge.limits.max;
+        targetRelease = hinge.limits.min;
+    }
+
     void Update()
     {
         JointSpring jointSpring = hinge.spring;
 
         if (Input.GetKey(input))
         {
-            jointSpring.spring = springPower;
+            jointSpring.targetPosition = targetPressed;
         }
         else
         {
-            jointSpring.spring = 0;
+            jointSpring.targetPosition = targetRelease;
         }
 
         hinge.spring = jointSpring;
