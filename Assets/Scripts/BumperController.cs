@@ -6,8 +6,10 @@ using UnityEngine;
 public class BumperController : MonoBehaviour
 {
     public Collider ball;
+    public float multiplier;
 
     private void OnCollisionEnter(Collision collision) {
-        Debug.Log("Ball hits Bumper!");
+        Rigidbody ballRigidbody = ball.GetComponent<Rigidbody>();
+        ballRigidbody.velocity *= multiplier;
     }
 }

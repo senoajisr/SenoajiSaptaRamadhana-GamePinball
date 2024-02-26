@@ -1303,29 +1303,11 @@ MonoBehaviour:
   input: 276
   springPower: 1000
   hinge: {fileID: 1561303514}
---- !u!1 &1648203855 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6630464654909187863, guid: e4c94639f51c4b9f08283a832c59d85b, type: 3}
-  m_PrefabInstance: {fileID: 5165453408670807266}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1648203856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8048757761400281082, guid: e4c94639f51c4b9f08283a832c59d85b, type: 3}
   m_PrefabInstance: {fileID: 5165453408670807266}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1648203860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648203855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd6173a64e9364319bb0a4e93a95a304, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 1877241627}
 --- !u!1 &1761475046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +1626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bumper
       objectReference: {fileID: 0}
+    - target: {fileID: 7630511368504536685, guid: e4c94639f51c4b9f08283a832c59d85b, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1877241627}
     - target: {fileID: 8048757761400281082, guid: e4c94639f51c4b9f08283a832c59d85b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.05
@@ -1687,10 +1673,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6630464654909187863, guid: e4c94639f51c4b9f08283a832c59d85b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1648203860}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4c94639f51c4b9f08283a832c59d85b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
