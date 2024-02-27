@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5507110567254143186}
   - component: {fileID: 7490365674880265062}
   - component: {fileID: 7630511368504536685}
+  - component: {fileID: 959280959175414278}
   m_Layer: 0
   m_Name: Bumper
   m_TagString: Untagged
@@ -122,3 +123,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
   multiplier: 3
+  anotherRenderer: {fileID: 5507110567254143186}
+  animator: {fileID: 959280959175414278}
+--- !u!95 &959280959175414278
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6630464654909187863}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1708f08cf6164803e9ccb2cc36639989, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
