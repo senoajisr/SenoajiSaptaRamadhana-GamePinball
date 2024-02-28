@@ -16,11 +16,11 @@ public class SwitchController : MonoBehaviour
   public Material onMaterial;
 
   private SwitchState state;
-  private Renderer renderer;
+  private Renderer switchRenderer;
 
   private void Start()
   {
-    renderer = GetComponent<Renderer>();
+    switchRenderer = GetComponent<Renderer>();
 
     Set(false);
 
@@ -40,13 +40,13 @@ public class SwitchController : MonoBehaviour
     if (active == true)
     {
       state = SwitchState.On;
-      renderer.material = onMaterial;
+      switchRenderer.material = onMaterial;
       StopAllCoroutines();
     }
     else
     {
       state = SwitchState.Off;
-      renderer.material = offMaterial;
+      switchRenderer.material = offMaterial;
       StartCoroutine(BlinkTimerStart(5));
     }
   }
@@ -69,9 +69,9 @@ public class SwitchController : MonoBehaviour
 
     for (int i = 0; i < times; i++)
     {
-      renderer.material = onMaterial;
+      switchRenderer.material = onMaterial;
       yield return new WaitForSeconds(0.5f);
-      renderer.material = offMaterial;
+      switchRenderer.material = offMaterial;
       yield return new WaitForSeconds(0.5f);
     }
 
