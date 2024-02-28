@@ -3691,6 +3691,7 @@ GameObject:
   - component: {fileID: 2090392405}
   - component: {fileID: 2090392404}
   - component: {fileID: 2090392403}
+  - component: {fileID: 2090392406}
   m_Layer: 0
   m_Name: Launcher
   m_TagString: Untagged
@@ -3784,6 +3785,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090392401}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2090392406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090392401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2532ba6dd920f873aad3b1155e73f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1877241627}
+  input: 32
+  maxTimeHold: 2
+  maxForce: 1200
+  holdMaterial: {fileID: 2100000, guid: 6289b629a805696ef8fefea77f7a743a, type: 2}
+  releaseMaterial: {fileID: 2100000, guid: e689a5864e7b44768b44cd4252ec36da, type: 2}
 --- !u!1001 &5165453408670807266
 PrefabInstance:
   m_ObjectHideFlags: 0
