@@ -10,6 +10,11 @@ public class BumperController : MonoBehaviour
     public Renderer anotherRenderer;
     public Animator animator;
     public AudioSource audioSource;
+    public ParticleSystem particles;
+
+    private void Start() {
+        particles.Stop();
+    }
 
     private void OnCollisionEnter(Collision collision) {
         Rigidbody ballRigidbody = ball.GetComponent<Rigidbody>();
@@ -18,5 +23,7 @@ public class BumperController : MonoBehaviour
         
         audioSource.transform.position = collision.transform.position;
         audioSource.Play();
+
+        particles.Play();
     }
 }
