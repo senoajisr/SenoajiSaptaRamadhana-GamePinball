@@ -15,6 +15,4 @@ public class AudioManager : MonoBehaviour
     {
         bgmAudioSource.Play();
     }
-
-    public void PlaySFX() { }
 }
