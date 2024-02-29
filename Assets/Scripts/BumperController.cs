@@ -11,6 +11,8 @@ public class BumperController : MonoBehaviour
     public Animator animator;
     public AudioSource audioSource;
     public ParticleSystem particles;
+    public float score;
+    public ScoreManager scoreManager;
 
     private void Start() {
         particles.Stop();
@@ -25,5 +27,7 @@ public class BumperController : MonoBehaviour
         audioSource.Play();
 
         particles.Play();
+
+        scoreManager.AddScore(score);
     }
 }

@@ -119,7 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8864443d868a210380a0a10899b1968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 0}
-  onMaterial: {fileID: 2100000, guid: e7878f1593cef378cad36c2f61c97078, type: 2}
+  bola: {fileID: 0}
   offMaterial: {fileID: 2100000, guid: a5ebcdd481961a0699a715148cb865c5, type: 2}
-  switchRenderer: {fileID: 1570157362666096244}
+  onMaterial: {fileID: 2100000, guid: e7878f1593cef378cad36c2f61c97078, type: 2}
+  score: 10
+  scoreManager: {fileID: 0}

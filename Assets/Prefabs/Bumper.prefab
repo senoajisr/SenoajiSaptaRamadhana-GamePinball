@@ -257,6 +257,8 @@ MonoBehaviour:
   animator: {fileID: 959280959175414278}
   audioSource: {fileID: 3182210136655206310}
   particles: {fileID: 1795285421347036988}
+  score: 5
+  scoreManager: {fileID: 0}
 --- !u!95 &959280959175414278
 Animator:
   serializedVersion: 5
