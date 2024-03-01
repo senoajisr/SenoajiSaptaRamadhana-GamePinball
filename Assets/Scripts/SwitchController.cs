@@ -16,6 +16,8 @@ public class SwitchController : MonoBehaviour
     public Material onMaterial;
     public float score;
     public ScoreManager scoreManager;
+    public AudioSource audioSource;
+    public ParticleSystem particles;
 
     private SwitchState state;
     private Renderer switchRenderer;
@@ -34,6 +36,8 @@ public class SwitchController : MonoBehaviour
         if (other == bola)
         {
             Toggle();
+            audioSource.Play();
+            particles.Play();
         }
     }
 
