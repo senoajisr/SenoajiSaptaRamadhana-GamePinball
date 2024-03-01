@@ -1636,8 +1636,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3903f31bcb001aa29a2ceb2b98017d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 0}
-  gameOverCanvas: {fileID: 0}
+  ball: {fileID: 1877241627}
+  gameOverCanvas: {fileID: 547404734}
 --- !u!1 &775242187
 GameObject:
   m_ObjectHideFlags: 0
